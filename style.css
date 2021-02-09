@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+*{
+    margin:0px;
+    padding:0px;
+
+}
+body{
+    font-family:'Roboto';
+    background: linear-gradient(to right ,#bfa7c7d2,#676ece9d);
+}
+
+/* @media only screen and (max-width:1500px){
+    .wrapper{
+        height
+    }
+} */
+.wrapper{
+    max-height:800px;
+    max-width:1500px;
+    margin:auto;
+}
+/*heading*/
+.logo img{
+    height:16px;
+    width:16px;
+}
+
+header{
+    position:relative;
+    top:8px;
+    display:flex;
+    width: 90%;
+    margin:auto;
+   
+}
+.logo{
+    font-size:24px;
+    flex:1;
+    font-weight: 600;
+}
+nav{
+    flex:2;
+    font-size: 18px;
+}
+.cart{
+    flex:1;
+}
+.nav-links{
+    display:flex;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color:rgb(78, 76, 76);
+}
+
+/*Main section*/
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    margin-top: 50px;
+}
+
+.glass{
+    background: white;
+    height:80vh;
+    width:80%;
+    border-radius: 2rem;
+    background:linear-gradient(to right bottom,
+    rgba(255,255,255,0.7),
+    rgba(255,255,255,0.3));
+    backdrop-filter: blur(2rem);
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
+    /* display:relative; */
+}
+/* .img1 img {
+    height:200px;
+    width:180px;
+    position:absolute;
+    top:-95px;
+    right:0;
+} */
+
+.avatar img{
+    border-radius: 2rem;
+    background:linear-gradient(to right bottom,
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,0.3));
+    height:80vh;
+}
+.intro-name{
+    padding:30px;
+    font-size: 50px;
+    font-weight: 600;
+   /* background:linear-gradient(to right,#494964,#656589);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+    color:rgb(78, 76, 76);
+}
+
+
+
+#flip div div {
+    height:60px;
+    margin-bottom:45px;
+    display:inline-block;
+}
+
+#flip{
+    height:70px;
+    overflow: hidden;
+}
+#flip div:first-child {
+    animation: show 5s linear infinite;
+ }
+
+ #flip div:first-child div {
+    background:#4ec7f3;
+  }
+  #flip div:last-child div {
+    background:#81ca45;
+  }
+
+ #flip div div {
+    background:#42c58a;
+  }
+
+/*Animations*/
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-205px;}
+    33% {margin-top:-205px;}
+    38% {margin-top:-100px;}
+    66% {margin-top:-100px;}
+    71% {margin-top:2.5px;}
+    99.99% {margin-top:2.5px;}
+    100% {margin-top:-270px;}
+  } 
+
+  /*media-queries*/
+  @media only screen and (max-width:1120px){
+      .avatar img{
+          width:200px;
+          height:200px;
+          object-fit: cover;
+          object-position:10px 1px;
+      }
+  }
+
+@media only screen and (max-width:626px)
+{
+    .intro-name{
+        position:relative;
+        top:-10px;
+    }
+    #flip div:first-child div,#flip div:last-child div,#flip div div{
+        visibility:hidden;
+        position:relative;
+    }
+    #flip div:first-child div::after{
+        background:#4ec7f3;
+        position:absolute;
+        left:0;
+        visibility: visible;
+        content:"Web";
+    }
+    #flip div:last-child div::after{
+        background:#81ca45;
+        position:absolute;
+        left:0;
+        visibility: visible;
+        content:"Desingner ";
+    }
+    #flip div div::after{
+        background:#42c58a;
+        position:absolute;
+        left:0;
+        visibility: visible;
+        content:"Developer";
+    }
+}

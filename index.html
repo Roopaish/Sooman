@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suman's Profile</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="./img/suman-logo.png">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <div class="preload">
+        <h2>Hang On!</h2>
+        <p>Page is loading...</p>
+    </div>
+    <div class="wrapper">
+        <header>
+
+            <div class="logo" id="navs" onclick="first()">
+                <img src="./img/suman-logo.png" alt="logo" \>
+                Suman
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a onclick="about()" class="nav-link" id="navs">About</a></li>
+                    <li><a onclick="gallery()" class="nav-link" id="navs">Gallery</a></li>
+                    <li><a onclick="contact()" class="nav-link" id="navs">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <div class="glass">
+                <!-- <div class="image">
+                <div class="img1">
+                    <img src="./img/gallery/butterfly.png" alt="">
+                </div>
+            </div> -->
+
+                <div id="avatar" class="divs">
+                    <img src="./img/me/suman.png" alt="avatar">
+                </div>
+
+                <div id="intro-name" class="divs">
+                    Hey there!
+                    <br>It's Suman Sapkota
+                    <div id="flip">
+                        <div>
+                            <div>&nbsp;Web Designer&nbsp;</div>
+                        </div>
+                        <div>
+                            <div>&nbsp;Web Developer&nbsp;</div>
+                        </div>
+                        <div>
+                            <div>&nbsp;Software Developer&nbsp;</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="about" class="divs">
+                    <h2>>>Web Designer & Developer.</h2>
+                    <p> I can design and develop beautiful and responsive web pages.
+                        Besides Web, I also like to capture moments in my camera.
+                        You can see some of the examples in the gallery section.</p>
+                    <!--Social Links-->
+                    <br>
+                    <h2>>>Say Hi!</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/logout.ii.1"><img src="./img/icons/facebook.svg"></a></li>
+                        <li><a href="#"><img src="./img/icons/instagram.svg"></a></li>
+                        <li><a href="#"><img src="./img/icons/twitter.svg"></a></li>
+                        <li><a href="#"><img src="./img/icons/github.svg"></a></li>
+                        <li><a href="#"><img src="./img/icons/youtube.svg"></a></li>
+                    </ul>
+                </div>
+
+                <div id="gallery" class="divs">
+                    <ul>
+                        <li>
+                            <img src="./img/gallery/1.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/3.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/4.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/5.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/6.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/7.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/8.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/9.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/10.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/11.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/12.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/13.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/14.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/15.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/16.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/17.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/18.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/19.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/20.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/gallery/21.jpg" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div id="contact" class="divs">
+                    <div class="contact-title">
+                    <h2>Feel free to contact me!</h2></div>
+                    <div class="form">
+                        <input type="text" placeholder="Name" name="name">
+                        <input type="text" placeholder="Email" name="email">
+                        <br\>
+                            <textarea id="message" name="message"></textarea>
+                            <br\>
+                                <button><a href="mailto:suman2020j@gmail.com">Send</a></button>
+                    </div>
+                    <div class="cat">
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_tr1pjkop.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="https://use.fontawesome.com/400b65a127.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

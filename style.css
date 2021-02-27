@@ -251,21 +251,18 @@ main {
 #contact {
   display: flex;
   height: inherit;
-  width: inherit+100rem;
-  flex-wrap:wrap;
+  width: inherit + 100rem;
+  flex-wrap: wrap;
 }
 #contact .contact-title {
-  flex:1 100%;
-  background-color: #c72424;
+  flex: 1 100%;
 }
-.form{
+.form {
   padding: 4rem 0rem;
-  flex:8;
-  background-color: #81ca45;
+  flex: 8;
 }
 .cat {
-  background-color: aqua;
-  flex:2;
+  flex: 2;
 }
 input,
 textarea {

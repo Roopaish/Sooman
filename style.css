@@ -211,7 +211,7 @@ main {
 
 /*Gallery*/
 
-#gallery ul {
+#gallery {
   height: 77vh;
   width: 99%;
   overflow: hidden;
@@ -223,28 +223,26 @@ main {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-#gallery ul::-webkit-scrollbar {
+#gallery::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-#gallery ul {
+#gallery {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
-#gallery li {
+#gallery a {
   padding: 5rem;
-  height: 40vh;
   flex-grow: 1;
 }
-#gallery img {
-  cursor: pointer;
+
+#gallery a img{
   border-radius: 4rem;
   max-height: 100%;
   min-width: 100%;
   object-fit: cover;
-  vertical-align: bottom;
 }
 
 /*Contact*/

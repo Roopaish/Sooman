@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" href="./img/suman-logo.png">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="./lightbox.min.css">
+    <script src="./lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
@@ -82,68 +84,81 @@
                 </div>
 
                 <div id="gallery" class="divs">
-                    <ul>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966662/pexels-photo-6966662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966661/pexels-photo-6966661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966660/pexels-photo-6966660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966659/pexels-photo-6966659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966657/pexels-photo-6966657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966656/pexels-photo-6966656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966655/pexels-photo-6966655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966654/pexels-photo-6966654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966653/pexels-photo-6966653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966652/pexels-photo-6966652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966650/pexels-photo-6966650.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966649/pexels-photo-6966649.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src=".https://images.pexels.com/photos/6966648/pexels-photo-6966648.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966647/pexels-photo-6966647.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                                alt="">
-                        </li>
-                        <li>
-                            <img src="https://images.pexels.com/photos/6966646/pexels-photo-6966646.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                                alt="">
-                        </li>
-                    </ul>
+                    <a href="https://images.pexels.com/photos/6966662/pexels-photo-6966662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966662/pexels-photo-6966662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966661/pexels-photo-6966661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966661/pexels-photo-6966661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966660/pexels-photo-6966660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966660/pexels-photo-6966660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966659/pexels-photo-6966659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966659/pexels-photo-6966659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966657/pexels-photo-6966657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966657/pexels-photo-6966657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966656/pexels-photo-6966656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966656/pexels-photo-6966656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966655/pexels-photo-6966655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966655/pexels-photo-6966655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966654/pexels-photo-6966654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966654/pexels-photo-6966654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966653/pexels-photo-6966653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966653/pexels-photo-6966653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966652/pexels-photo-6966652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966652/pexels-photo-6966652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966650/pexels-photo-6966650.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966650/pexels-photo-6966650.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966649/pexels-photo-6966649.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966649/pexels-photo-6966649.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966648/pexels-photo-6966648.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966648/pexels-photo-6966648.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966647/pexels-photo-6966647.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966647/pexels-photo-6966647.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="">
+                    </a>
+                    <a href="https://images.pexels.com/photos/6966646/pexels-photo-6966646.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        data-lightbox="mygallery" data-title="">
+                        <img src="https://images.pexels.com/photos/6966646/pexels-photo-6966646.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                            alt="">
+                    </a>
                 </div>
 
                 <div id="contact" class="divs">

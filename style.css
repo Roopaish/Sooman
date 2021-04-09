@@ -123,7 +123,8 @@ main {
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
-  backdrop-filter: blur(5rem);
+  -webkit-backdrop-filter: blur(5rem);
+          backdrop-filter: blur(5rem);
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -156,7 +157,8 @@ main {
   overflow: hidden;
 }
 #flip div:first-child {
-  animation: show 5s linear infinite;
+  -webkit-animation: show 5s linear infinite;
+          animation: show 5s linear infinite;
 }
 
 #flip div:first-child div {
@@ -244,7 +246,8 @@ main {
   border-radius: 4rem;
   max-height: 100%;
   min-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*Contact*/
@@ -281,6 +284,32 @@ button a {
 }
 
 /*Animations*/
+@-webkit-keyframes show {
+  0% {
+    margin-top: -270rem;
+  }
+  5% {
+    margin-top: -205rem;
+  }
+  33% {
+    margin-top: -205rem;
+  }
+  38% {
+    margin-top: -100rem;
+  }
+  66% {
+    margin-top: -100rem;
+  }
+  71% {
+    margin-top: 2.5rem;
+  }
+  99.99% {
+    margin-top: 2.5rem;
+  }
+  100% {
+    margin-top: -270rem;
+  }
+}
 @keyframes show {
   0% {
     margin-top: -270rem;
@@ -308,6 +337,15 @@ button a {
   }
 }
 
+@-webkit-keyframes loader {
+  from {
+    transform: translateY(10rem);
+  }
+  to {
+    transform: translate(0rem);
+  }
+}
+
 @keyframes loader {
   from {
     transform: translateY(10rem);
@@ -322,8 +360,10 @@ button a {
   #avatar img {
     width: 200rem;
     height: 200rem;
-    object-fit: cover;
-    object-position: 10rem 1rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 10rem 1rem;
+       object-position: 10rem 1rem;
   }
 }
 
